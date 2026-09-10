@@ -1,6 +1,6 @@
 ﻿namespace BCMS
 {
-    partial class frmTest
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // frmTest
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 294);
-            this.Name = "frmTest";
-            this.Text = "frmTest";
+            this.ClientSize = new System.Drawing.Size(1025, 561);
+            this.Name = "frmMain";
+            this.Text = "frmMain";
             this.ResumeLayout(false);
 
         }
