@@ -7,9 +7,9 @@ C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.csproj.GenerateResource.cac
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.csproj.CoreCompileInputs.cache
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.pdb
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe.config
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\Guna.UI2.dll
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.frmMain.resources
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.TextBoxt.resources
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.csproj.Up2Date
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.subForm.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.BaseForm.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.frmMain.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe.config
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.Base_Controls.BaseButton.resources
