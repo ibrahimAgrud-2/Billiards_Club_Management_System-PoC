@@ -12,4 +12,3 @@ C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.csproj.Up2Date
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.BaseForm.resources
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.frmMain.resources
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe.config
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.Base_Controls.BaseButton.resources

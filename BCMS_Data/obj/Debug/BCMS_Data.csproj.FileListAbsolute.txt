@@ -1,0 +1,9 @@
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\bin\Debug\BCMS_Data.dll
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\bin\Debug\BCMS_Data.pdb
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\obj\Debug\BCMS_Data.csproj.AssemblyReference.cache
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\obj\Debug\BCMS_Data.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\obj\Debug\BCMS_Data.dll
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\obj\Debug\BCMS_Data.pdb
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\bin\Debug\Common.dll
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\bin\Debug\Common.pdb
+C:\Users\ibrah\source\repos\BCMS_ConsoleApp\BCMS_Data\obj\Debug\BCMS_Data.csproj.Up2Date

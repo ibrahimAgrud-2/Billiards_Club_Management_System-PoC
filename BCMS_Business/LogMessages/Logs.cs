@@ -1,0 +1,18 @@
+﻿using BCMS_Data.LogMessages;
+using System;
+using System.Diagnostics;
+
+
+namespace BCMS_Business.LogMessages
+{
+    public class Logs
+    {
+
+        public static void LogToDatabase(EventLogEntryType ErrorType, string message, string prefix = "", Exception ex = null)
+        {
+            //TODO: user Eklendiğinde Sistemde o ank user ID'sini vermelisin.
+            DBLog.LogToDatabase(ErrorType,message, 1, prefix,ex);
+        }
+    }
+}
+
