@@ -21,5 +21,13 @@ namespace BCMS
         {
 
         }
+
+  
+
+        private void guna2TabControl1_Click(object sender, EventArgs e)
+        {
+            frmListUser listUser = new frmListUser();
+            listUser.ShowDialog();
+        }
     }
 }
