@@ -10,24 +10,22 @@ using System.Windows.Forms;
 
 namespace BCMS
 {
-    public partial class frmMain : BaseForm
+    public partial class frmMain : Form
     {
         public frmMain()
         {
             InitializeComponent();
         }
 
-        private void baseButton2_Click(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-  
 
-        private void guna2TabControl1_Click(object sender, EventArgs e)
+        private void tpUser_click(object sender, EventArgs e)
         {
-            frmListUser listUser = new frmListUser();
-            listUser.ShowDialog();
+            this.ctrlUser1.LoadUserData();
         }
     }
 }

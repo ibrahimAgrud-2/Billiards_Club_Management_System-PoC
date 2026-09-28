@@ -28,30 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tbUser = new System.Windows.Forms.TabPage();
+            this.ctrlUser1 = new BCMS.User.ctrlUser();
             this.guna2TabControl1.SuspendLayout();
+            this.tbUser.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1320, 785);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Users";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // guna2TabControl1
             // 
             this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
+            this.guna2TabControl1.Controls.Add(this.tabPage2);
+            this.guna2TabControl1.Controls.Add(this.tbUser);
+            this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1508, 793);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1438, 665);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -68,27 +63,63 @@
             this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.TabIndex = 14;
+            this.guna2TabControl1.TabIndex = 1;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.Click += new System.EventHandler(this.guna2TabControl1_Click);
+            this.guna2TabControl1.Click += new System.EventHandler(this.tpUser_click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(184, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1250, 657);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Billiards Table";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tbUser
+            // 
+            this.tbUser.Controls.Add(this.ctrlUser1);
+            this.tbUser.Location = new System.Drawing.Point(184, 4);
+            this.tbUser.Name = "tbUser";
+            this.tbUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tbUser.Size = new System.Drawing.Size(1250, 657);
+            this.tbUser.TabIndex = 0;
+            this.tbUser.Text = "Users";
+            this.tbUser.UseVisualStyleBackColor = true;
+            // 
+            // ctrlUser1
+            // 
+            this.ctrlUser1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ctrlUser1.Location = new System.Drawing.Point(3, 3);
+            this.ctrlUser1.Name = "ctrlUser1";
+            this.ctrlUser1.Size = new System.Drawing.Size(1244, 617);
+            this.ctrlUser1.TabIndex = 0;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1704, 879);
+            this.ClientSize = new System.Drawing.Size(1438, 665);
             this.Controls.Add(this.guna2TabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BCMS - Billiard Club Management System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.guna2TabControl1.ResumeLayout(false);
+            this.tbUser.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage1;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
+        private System.Windows.Forms.TabPage tbUser;
+        private System.Windows.Forms.TabPage tabPage2;
+        private User.ctrlUser ctrlUser1;
     }
 }

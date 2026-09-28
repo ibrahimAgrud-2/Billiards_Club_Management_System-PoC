@@ -5,20 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using BCMS_Business;
+using System.Windows.Forms;
 using BCMS_Business.Users;
 
-namespace BCMS
+namespace BCMS.User
 {
-    public partial class frmListUser : BaseForm
+    public partial class ctrlUser : UserControl
     {
-        public frmListUser()
+        public ctrlUser()
         {
             InitializeComponent();
         }
 
-   
 
         private DataTable _DtUsers;
 
@@ -32,23 +30,24 @@ namespace BCMS
         {
             foreach (KeyValuePair<string, string> dict in _ColumnNames)
             {
-                dgvUsers.Columns[dict.Key].HeaderText = dict.Value;
+                dgvUser.Columns[dict.Key].HeaderText = dict.Value;
             }
 
         }
 
         private void _RefreshPeopleList()
         {
-            _DtUsers = User.GetUserList();
-
-            dgvUsers.DataSource = _DtUsers.DefaultView.ToTable("Users", false, "UserName", "IsActive");
-
-
+            _DtUsers = BCMS_Business.Users.User.GetUserList();
+            dgvUser.DataSource = _DtUsers.DefaultView.ToTable("Users", false, "UserName", "IsActive");
         }
-        private void ListUser_Load(object sender, EventArgs e)
+
+        public void LoadUserData()
         {
             _RefreshPeopleList();
         }
+
+  
+
 
     }
 }
