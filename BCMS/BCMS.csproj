@@ -64,6 +64,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\ctrlAddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\ctrlAddUser.Designer.cs">
+      <DependentUpon>ctrlAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\ctrlUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +88,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User\ctrlAddUser.resx">
+      <DependentUpon>ctrlAddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\ctrlUser.resx">
       <DependentUpon>ctrlUser.cs</DependentUpon>
     </EmbeddedResource>

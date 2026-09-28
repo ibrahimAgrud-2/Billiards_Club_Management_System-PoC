@@ -35,7 +35,7 @@ namespace BCMS.User
 
         }
 
-        private void _RefreshPeopleList()
+        private void _RefreshUserList()
         {
             _DtUsers = BCMS_Business.Users.User.GetUserList();
             dgvUser.DataSource = _DtUsers.DefaultView.ToTable("Users", false, "UserName", "IsActive");
@@ -43,11 +43,21 @@ namespace BCMS.User
 
         public void LoadUserData()
         {
-            _RefreshPeopleList();
+            _RefreshUserList();
         }
 
-  
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.addUser1.AddCanceled += AddCanceled;
+            this.dgvUser.Visible = false;
+            this.addUser1.Visible = true;
+        }
 
-
+        private void AddCanceled()
+        {
+            this.addUser1.Visible =false;
+            this.dgvUser.Visible = true;
+            _RefreshUserList();
+        }
     }
 }

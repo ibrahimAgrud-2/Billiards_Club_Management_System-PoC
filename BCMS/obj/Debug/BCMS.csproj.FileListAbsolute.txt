@@ -18,3 +18,4 @@ C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Business.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\Common.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Data.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.User.ctrlUser.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.User.ctrlAddUser.resources
