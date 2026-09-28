@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.addUser1 = new BCMS.User.ctrlAddUser();
+            this.addUser1 = new BCMS.User.ctrlAddUpdateUser();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +114,6 @@
 
         private System.Windows.Forms.DataGridView dgvUser;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private ctrlAddUser addUser1;
+        private ctrlAddUpdateUser addUser1;
     }
 }

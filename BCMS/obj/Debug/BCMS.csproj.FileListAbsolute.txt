@@ -10,7 +10,6 @@ C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\Guna.UI2.dll
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.csproj.Up2Date
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.frmMain.resources
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe.config
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Business.dll
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\Common.dll
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Data.dll
@@ -18,4 +17,5 @@ C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Business.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\Common.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\bin\Debug\BCMS_Data.pdb
 C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.User.ctrlUser.resources
-C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.User.ctrlAddUser.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.User.ctrlAddUpdateUser.resources
+C:\Users\ibrah\source\repos\BCMS\BCMS\obj\Debug\BCMS.exe.config

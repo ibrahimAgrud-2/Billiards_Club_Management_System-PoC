@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace BCMS.User
 {
-    public partial class ctrlAddUser : UserControl
+    public partial class ctrlAddUpdateUser : UserControl
     {
-        public ctrlAddUser()
+        public ctrlAddUpdateUser()
         {
             InitializeComponent();
+            this._Mode = enMode.enAddNew;
+            dtpBirthDate.MaxDate = DateTime.Now.Date.AddYears(-18);
         }
 
 
@@ -28,6 +30,13 @@ namespace BCMS.User
         {
             this.Visible = false;
             AddCanceled?.Invoke();
+        }
+
+        enum enMode { enAddNew = 1, enUpdate = 2 };
+        private enMode _Mode;
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
 
         }
     }

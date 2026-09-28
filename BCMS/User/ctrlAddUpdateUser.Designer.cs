@@ -1,6 +1,6 @@
 ﻿namespace BCMS.User
 {
-    partial class ctrlAddUser
+    partial class ctrlAddUpdateUser
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlAddUser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ctrlAddUpdateUser));
             this.pbPersonImage = new System.Windows.Forms.PictureBox();
             this.lnkLblRemove = new System.Windows.Forms.LinkLabel();
             this.lnklblSetImage = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.mskPhoneNumber = new System.Windows.Forms.MaskedTextBox();
-            this.mskLastName = new System.Windows.Forms.MaskedTextBox();
-            this.mskFirstName = new System.Windows.Forms.MaskedTextBox();
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnGoBack = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label15 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.emailInput1 = new BCMS.CustomControls.EmailInput();
+            this.textInput3 = new BCMS.CustomControls.TextInput();
+            this.textInput2 = new BCMS.CustomControls.TextInput();
+            this.textInput1 = new BCMS.CustomControls.TextInput();
+            this.phoneInput1 = new BCMS.CustomControls.PhoneInput();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -98,49 +98,6 @@
             this.label1.Size = new System.Drawing.Size(151, 32);
             this.label1.TabIndex = 173;
             this.label1.Text = "Last Name";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(174, 335);
-            this.txtAddress.MaxLength = 2000;
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(242, 95);
-            this.txtAddress.TabIndex = 172;
-            // 
-            // mskPhoneNumber
-            // 
-            this.mskPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskPhoneNumber.HidePromptOnLeave = true;
-            this.mskPhoneNumber.Location = new System.Drawing.Point(175, 216);
-            this.mskPhoneNumber.Mask = "(999) 000-0000";
-            this.mskPhoneNumber.Name = "mskPhoneNumber";
-            this.mskPhoneNumber.PromptChar = ' ';
-            this.mskPhoneNumber.Size = new System.Drawing.Size(236, 28);
-            this.mskPhoneNumber.TabIndex = 171;
-            // 
-            // mskLastName
-            // 
-            this.mskLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskLastName.HidePromptOnLeave = true;
-            this.mskLastName.Location = new System.Drawing.Point(175, 110);
-            this.mskLastName.Mask = "LL???????????????????????????????????????????";
-            this.mskLastName.Name = "mskLastName";
-            this.mskLastName.PromptChar = ' ';
-            this.mskLastName.Size = new System.Drawing.Size(236, 28);
-            this.mskLastName.TabIndex = 170;
-            // 
-            // mskFirstName
-            // 
-            this.mskFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskFirstName.HidePromptOnLeave = true;
-            this.mskFirstName.Location = new System.Drawing.Point(174, 57);
-            this.mskFirstName.Mask = "LL???????????????????????????????????????????";
-            this.mskFirstName.Name = "mskFirstName";
-            this.mskFirstName.PromptChar = ' ';
-            this.mskFirstName.Size = new System.Drawing.Size(237, 28);
-            this.mskFirstName.TabIndex = 169;
             // 
             // dtpBirthDate
             // 
@@ -212,15 +169,6 @@
             this.label11.TabIndex = 163;
             this.label11.Text = "Phone: ";
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(175, 276);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(236, 28);
-            this.txtEmail.TabIndex = 162;
-            // 
             // btnGoBack
             // 
             this.btnGoBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -256,41 +204,88 @@
             this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider1.ContainerControl = this;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(570, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 36);
-            this.button1.TabIndex = 159;
-            this.button1.Text = "Save";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.89076F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.Location = new System.Drawing.Point(570, 394);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(98, 36);
+            this.btnSave.TabIndex = 159;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ctrlAddUser
+            // emailInput1
+            // 
+            this.emailInput1.Location = new System.Drawing.Point(175, 281);
+            this.emailInput1.Multiline = true;
+            this.emailInput1.Name = "emailInput1";
+            this.emailInput1.Size = new System.Drawing.Size(236, 32);
+            this.emailInput1.TabIndex = 180;
+            // 
+            // textInput3
+            // 
+            this.textInput3.InputType = BCMS.CustomControls.TextInput.enInputType.Text;
+            this.textInput3.IsRequired = true;
+            this.textInput3.Location = new System.Drawing.Point(174, 346);
+            this.textInput3.Multiline = true;
+            this.textInput3.Name = "textInput3";
+            this.textInput3.Size = new System.Drawing.Size(250, 84);
+            this.textInput3.TabIndex = 179;
+            // 
+            // textInput2
+            // 
+            this.textInput2.InputType = BCMS.CustomControls.TextInput.enInputType.Text;
+            this.textInput2.IsRequired = true;
+            this.textInput2.Location = new System.Drawing.Point(175, 106);
+            this.textInput2.Multiline = true;
+            this.textInput2.Name = "textInput2";
+            this.textInput2.Size = new System.Drawing.Size(236, 32);
+            this.textInput2.TabIndex = 178;
+            // 
+            // textInput1
+            // 
+            this.textInput1.InputType = BCMS.CustomControls.TextInput.enInputType.Text;
+            this.textInput1.IsRequired = true;
+            this.textInput1.Location = new System.Drawing.Point(175, 61);
+            this.textInput1.Multiline = true;
+            this.textInput1.Name = "textInput1";
+            this.textInput1.Size = new System.Drawing.Size(236, 32);
+            this.textInput1.TabIndex = 177;
+            // 
+            // phoneInput1
+            // 
+            this.phoneInput1.Location = new System.Drawing.Point(175, 229);
+            this.phoneInput1.Multiline = true;
+            this.phoneInput1.Name = "phoneInput1";
+            this.phoneInput1.Size = new System.Drawing.Size(236, 35);
+            this.phoneInput1.TabIndex = 181;
+            // 
+            // ctrlAddUpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.phoneInput1);
+            this.Controls.Add(this.emailInput1);
+            this.Controls.Add(this.textInput3);
+            this.Controls.Add(this.textInput2);
+            this.Controls.Add(this.textInput1);
             this.Controls.Add(this.pbPersonImage);
             this.Controls.Add(this.lnkLblRemove);
             this.Controls.Add(this.lnklblSetImage);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.mskPhoneNumber);
-            this.Controls.Add(this.mskLastName);
-            this.Controls.Add(this.mskFirstName);
             this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.button1);
-            this.Name = "ctrlAddUser";
+            this.Controls.Add(this.btnSave);
+            this.Name = "ctrlAddUpdateUser";
             this.Size = new System.Drawing.Size(683, 451);
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -305,21 +300,21 @@
         private System.Windows.Forms.LinkLabel lnkLblRemove;
         private System.Windows.Forms.LinkLabel lnklblSetImage;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.MaskedTextBox mskPhoneNumber;
-        private System.Windows.Forms.MaskedTextBox mskLastName;
-        private System.Windows.Forms.MaskedTextBox mskFirstName;
         private System.Windows.Forms.DateTimePicker dtpBirthDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btnGoBack;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
+        private CustomControls.TextInput textInput1;
+        private CustomControls.TextInput textInput3;
+        private CustomControls.TextInput textInput2;
+        private CustomControls.EmailInput emailInput1;
+        private CustomControls.PhoneInput phoneInput1;
     }
 }
