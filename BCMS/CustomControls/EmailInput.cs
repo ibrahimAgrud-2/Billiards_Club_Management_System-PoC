@@ -26,8 +26,8 @@ namespace BCMS.CustomControls
         {
             if (this.Text.Trim().Length!=0)
             {
-                if (Common.Validation.IsEmailValid(this.Text))
-                    return false;
+                return Common.Validation.IsEmailValid(this.Text);
+                     
             }
             
             return true;

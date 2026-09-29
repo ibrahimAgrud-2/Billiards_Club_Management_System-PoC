@@ -1,4 +1,5 @@
 ﻿using Common;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ using static BCMS.CustomControls.TextInput;
 
 namespace BCMS.CustomControls
 {
-    public partial class PhoneInput : TextBox
+    public partial class PhoneInput : Guna2TextBox
     {
         public PhoneInput()
         {
@@ -25,9 +26,9 @@ namespace BCMS.CustomControls
             base.OnPaint(pe);
         }
 
-        public Boolean IsInputValid(string phoneNumber)
+        public Boolean IsInputValid()
         {
-            return Validation.IsPhoneNumberValid(phoneNumber);
+            return Validation.IsPhoneNumberValid(this.Text);
         }
     }
 }

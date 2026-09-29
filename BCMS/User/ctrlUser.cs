@@ -48,14 +48,12 @@ namespace BCMS.User
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.addUser1.AddCanceled += AddCanceled;
-            this.dgvUser.Visible = false;
-            this.addUser1.Visible = true;
+            
         }
 
         private void AddCanceled()
         {
-            this.addUser1.Visible =false;
+          
             this.dgvUser.Visible = true;
             _RefreshUserList();
         }

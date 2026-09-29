@@ -25,7 +25,7 @@ namespace BCMS
 
         private void tpUser_click(object sender, EventArgs e)
         {
-            this.ctrlUser1.LoadUserData();
+           
         }
     }
 }
